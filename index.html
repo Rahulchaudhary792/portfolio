@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset = "UTF-8">
+       <meta name = "Description" content = "MyDescription">
+       <meta name = "Author" content = "Id, Phonenumber">
+       <meta name = "Keywords" content = "HTML, CSS, JAVASCRIPT">
+       <meta name = "Viewport" content = "width=device-width, initial-scale=1.0">
+       <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+       <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+       <title>Portfolio</title>
+       <style>
+          .header-items {
+             display: flex;
+             justify-content: center;
+             align-items: center; 
+             flex-wrap: wrap;
+             position: fixed;
+             right: 0;
+             left: 0;
+             top: 0;
+             background-color: rgb(12, 12, 80);
+             color: white;
+             font-family:'Poppins';
+             padding: 2px 0px;
+             margin-top: -5px;
+             z-index: 3;
+            }
+            .name-div {
+                color: white;
+                margin-right: 100px;
+            }
+            .div-content {
+                margin-left: 10px;
+            }
+            .intro-h {
+                color: white;
+            }
+            .intro-div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                top: 90px;
+                font-family:'Poppins';
+                margin-bottom: -40px;
+                z-index: 2;
+            }
+            .intro-name {
+                color:blueviolet;
+                margin-left: 10px;
+            }
+            .intro-name2 {
+                color:blueviolet;
+            }
+            .main-content {
+                margin-left: 30px;
+            }
+            .dev-image {
+                width: 300px;
+                height: 300px;
+            }
+            .div-content:hover {
+                border: 1px solid white;
+            }
+            .image-div1 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+                bottom: 60px;
+                margin-right: 30px;
+            }
+            .buttons-div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                top: -150px;
+            }
+            .button1 {
+                color: white;
+                margin-left: 30px;
+                margin-right: 10px;
+                background-color: rgb(146, 121, 170);
+                padding: 10px 10px;
+                border: 2px solid white;
+                border-radius: 3px;
+            }
+            .button2 {
+                color: rgb(247, 242, 242);
+                background-color: rgb(146, 121, 170);
+                padding: 10px 10px;
+                border: 2px solid white;
+                border-radius: 3px;
+            }
+            .button1:hover {
+                color: black;
+                background-color: white;
+            }
+            .button2:hover {
+                color: black;
+                background-color: white;
+            }
+            .horizontal-line {
+                color: rgb(237, 221, 221);
+                position: relative;
+                bottom: 20px;
+            }
+            .work-h {
+                color: rgb(147, 138, 138);
+                font-family:'Poppins';
+                margin-left: 30px;
+            }
+            .work-h1 {
+                color: rgb(252, 252, 252);
+                font-family:'Poppins';
+                margin-left: 30px;
+            }
+            .description-h {
+                color: white;
+                color: rgb(252, 252, 252);
+                font-family:'Poppins';
+                margin-left: 30px;
+            }
+            .horizontal-line1 {
+                color: rgb(237, 221, 221);
+                position: relative;
+                bottom: -10px;
+            }
+            .image-html {
+                width: 160px;
+                height: 160px;
+                filter: invert(1);
+            }
+            .image-css {
+                width: 150px;
+                height: 100px;
+                filter: invert(1);
+            }
+            .image-bs {
+                width: 100px;
+                height: 100px;
+                filter: invert(1);
+            }
+            .image-js {
+                width: 150px;
+                height: 100px;
+                filter: invert(1);
+            }
+            .technical-skills {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .image-project1 {
+                width: 300px;
+                height: 300px;
+                border: 5px solid white;
+            }
+            .image-project2 {
+                width: 300px;
+                height: 300px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                border: 5px solid white;
+            }
+            .projects-info {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .projects-name-info {
+                color: white;
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+                right: 20px;
+            }
+            .footer-div {
+                width: 100%;
+                height: 150px;
+                background-color: rgb(12, 12, 80);
+                position: relative;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }
+            .work-h2 {
+                color: white;
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .work-h3 {
+                color: rgb(252, 252, 252);
+                font-family:'Poppins';
+                position: relative;
+                right: 0px;
+            }
+            .work-h4 {
+                color: rgb(88, 85, 85);
+                font-family:'Poppins';
+                position: relative;
+                right: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .work-div4 {
+                margin-bottom: 10px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            .about-section {
+                width: 300px;
+                height: 400px;
+                background-color: white;
+                position: fixed; 
+                top: 60px;
+                border-radius: 20px;
+                z-index: 3;
+            }
+            .about-section1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+            }
+            .labels-div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                left: 20px;
+                margin-left: 10px;
+                color: red;
+            }
+            .details-div {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                bottom: 0px;
+                left: 10px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding: 10px 10px;
+                color: white;
+            }
+            .div-end {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Poppins';
+                background-color: rgb(17, 32, 248);
+                border-radius: 20px;
+            }
+            .label-h5 {
+                margin-top: 45px;
+                margin-bottom: 45px;
+                margin-left: 10px;
+                color: rgb(209, 164, 79);
+            }
+            .details-h5 {
+                position: relative;
+                bottom: 19px;
+            }
+         @media (max-width: 722px) {
+            .projects {
+                position: relative; 
+                top: 290px;
+            }          
+            .header-items {
+             display: flex;
+             justify-content: center;
+             align-items: center; 
+             flex-wrap: wrap;
+             position: fixed;
+             right: 0;
+             left: 0;
+             top: 0;
+             background-color: rgb(12, 12, 80);
+             color: white;
+             font-family:'Poppins';
+             padding: 2px 0px;
+             margin-top: -5px;
+             font-size: 14px;
+             z-index: 3;
+            }
+            .name-div {
+                color: white;
+                margin-right: 5px;
+            }
+            .div-content {
+                margin-left: 10px;
+            }
+             .image-div1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 130px;
+                margin-right: 30px;
+            }
+            .intro-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 90px;
+                font-family:'Poppins';
+                margin-bottom: -40px;
+                z-index: 2;
+            }
+            .main-content {
+                margin-left: 0px;
+            }
+            .intro-name {
+                font-size: 25px;
+            }
+            .intro-name2 {
+                font-size: 25px;
+                margin-bottom: 3px;
+            }
+            .intro-h {
+                font-size: 25px;
+            }
+            .buttons-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 150px;
+            }
+            .button1 {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+            .horizontal-line {
+                color: white;
+                position: relative;
+                top: 230px;
+            }
+            .work-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .work-h {
+                color: rgb(147, 138, 138);
+                font-family:'Poppins';
+                margin-right: 0px;
+            }
+            .work-h1 {
+                text-align: center;
+                position: relative;
+                right: 10px;
+             }
+            .work-div {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               position: relative;
+               top: 230px;
+            }
+            .description-h {
+                color: white;
+                font-family:'Poppins';
+                margin-right: 20px;
+            }
+            .description-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 220px;
+                text-align: center;
+            }
+            .horizontal-line1 {
+                color: white;
+                position: relative;
+                top: 215px;
+            }
+            .image-html {
+                width: 100px;
+                height: 90px;
+                filter: invert(1);
+            }
+            .image-css {
+                width: 85px;
+                height: 65px;
+                position: relative;
+                right: 0px;
+                filter: invert(1);
+            }
+            .image-bs {
+                width: 70px;
+                height: 70px;
+                filter: invert(1);
+            }
+            .image-js {
+                width: 100px;
+                height: 60px;
+                position: relative;
+                left: 0px;
+                filter: invert(1);
+            }
+            .technical-skills {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+                top: 210px;
+            }
+            .image-project1 {
+                width: 200px;
+                height: 200px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                border: 5px solid white;
+            }
+            .image-project2 {
+                width: 200px;
+                height: 200px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                border: 5px solid white;
+            }
+            .projects-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+                top: 250px;
+            }
+            .projects-name-info {
+                color: white;
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 300px;
+                right: 0px;
+            }
+            .project-name {
+                margin-left: 10px;
+            }
+            .horizontal-line2 {
+                color: white;
+                position: relative;
+                top: 305px;
+            }
+            .footer-div {
+                width: 100%;
+                height: 150px;
+                background-color: rgb(12, 12, 80);
+                position: relative;
+                left: 0px;;
+                right: 0;
+                top: 300px;
+            }
+            .work-h2 {
+                color: white;
+                font-family: 'Poppins';
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 300px;
+            }
+            .work-h4 {
+                color: rgb(88, 85, 85);
+                font-family:'Poppins';
+                position: relative;
+                top: 300px;
+                right: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+              background-color: black;
+              margin-bottom: 50px;
+            }
+       </style>
+    </head>
+    <body>
+       <header>
+          <div class = "header-content">
+              <div class = "header-items">
+                    <div class = "name-div">
+                        <h3>
+                            Kushal's Portfolio
+                        </h3>
+                </div>
+                  <div class = "div-content">
+                      <a href = "#Home" tooltip = "Home">Home</a>
+                    </div>
+                    <div class = "div-content" onclick = "about()">
+                        <a href = "#About" tooltip = "About">About</a>
+                    </div>
+                    <div class = "div-content" onclick = "services()">
+                        <a href = "#Services" tooltip = "Services">Services</a>
+                    </div>
+                    <div class = "div-content" onclick = "projects()">
+                        <a href = "#Projects" tooltip = "Projects">Projects</a>
+                    </div>
+                    <div class = "div-content" tooltip = "Contact Me">
+                        <a href = "#Contact Me">Contact Me</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+           </div>
+        </header>
+        <main>
+            <div id = "Home">
+                <div class = "main-content">
+                    <div class = "intro-div">
+                        <h1 class = "intro-h">Hi, My name is</h1>
+                        <h1 class = "intro-name">Kushal</h1>
+                    </div>
+                    <div class = "intro-div">
+                        <h1 class = "intro-h">and I am a passionate</h1>
+                    </div>
+                    <div class = "intro-div">
+                        <h1 class = "intro-name2">Full Stack Web Developer</h1>
+                    </div>
+                </div>
+            <div class = "image-div1">
+                <img src = "https://www.genesecloud.academy/wp-content/uploads/2021/06/Programming-amico.png" class = "dev-image">
+            </div>
+        </div>
+        <div class = "buttons-div">
+            <div class = "button-div1">
+               <button class = "button1 js-button1">Download Resume</button>
+            </div>
+            <div class = "button-div2">
+               <button class = "button2 js-button2">Visit Github</button>
+            </div>
+        </div>
+        <div>
+            <hr class = "horizontal-line">
+        </div>
+        <div class = "work-div">
+            <h5 class = "work-h1">What I have done so far</h5>
+        </div>
+        <div class = "work-div">
+            <h2 class = "work-h1">Work Experience</h2>
+        </div>
+        <div class = "description-div">
+            <h4 class = "description-h">No work experience. I am a Fresher, currently graduating from Keshav Memorial Institute of Technology, Narayanaguda, Hyderabad.</h4>
+        </div>
+        <div>
+            <hr class = "horizontal-line1">
+        </div>
+        <div class = "work-div">
+            <h2 class = "work-h1">
+                Technical Skills
+            </h2>
+        </div>
+        <div class = "technical-skills">
+            <div>
+                <img src = "https://tse3.mm.bing.net/th?id=OIP.pqcPskVdTrJqfhZ-Z49AtQHaHn&pid=Api&P=0&h=180" class = "image-html">
+            </div>
+            <div>
+                <img src = "https://cdn.freebiesupply.com/logos/thumbs/2x/css3-logo.png" class = "image-css">
+            </div>
+            <div>
+                <img src = "https://miro.medium.com/max/1024/0*HHrmGxvASDOUhNc-.png" class = "image-bs">
+            </div>
+            <div>
+                <img src = "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo-2048x1280.png" class = "image-js">
+            </div>
+            <div>
+                <img src = "https://tse3.mm.bing.net/th?id=OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC&pid=Api&P=0&h=180" class = "image-html"/>
+            </div>
+            <div>
+                <img src = "https://tse2.mm.bing.net/th?id=OIP.Tf4BFI6846neirVSebC0vAAAAA&pid=Api&P=0&h=180" class = "image-css" />
+            </div>
+            <div>
+                <img src = "https://tse3.mm.bing.net/th?id=OIP.hYfdBkfKgvtMoDcqk_LjWAHaCB&pid=Api&P=0&h=180" class = "image-js" />
+            </div>
+            <div>
+                <img src = "https://tse3.mm.bing.net/th?id=OIP.7DfPlLIngzN5xxUvcc4tUgHaCO&pid=Api&P=0&h=180" class = "image-js" />
+            </div>
+            <div>
+                <img src = "https://tse4.mm.bing.net/th?id=OIP._Mq1T1IJe6cw14lre2cBzgHaE8&pid=Api&P=0&h=180" class = "image-js" />
+            </div>
+            <div>
+                <img src = "https://tse4.mm.bing.net/th?id=OIP.8SVgggxQcO5L6Dw_61ac4QHaEK&pid=Api&P=0&h=180" class = "image-js" />
+            </div>
+        </div>
+    <div>
+        <hr class = "horizontal-line1">
+    </div>
+    <div class = "work-div">
+        <h2 class = "work-h1">Latest Projects</h2>
+    </div>
+    <div class = "projects-info">
+        <div>
+           <img src = "Screenshot (145).png" class = "image-project1">
+        </div>
+        <div>
+           <img src = "Screenshot (146).png"  class = "image-project1">
+        </div>
+        <div>
+           <img src = "Screenshot (149).png"  class = "image-project2">
+        </div>
+    </div>
+    <div class = "projects-name-info">
+        <div>
+           <h3 class = "project-name">1.Rock, Paper, Scissors</h3>
+        </div>
+        <div>
+            <h3 class = "project-name">2.Dragon Game</h3>
+        </div>
+        <div>
+            <h3 class = "project-name">3.Alarm Clock</h3>
+        </div>
+    </div>
+    <div class = "projects">
+        <h2 style="color: white; text-align: center; font-family: Arial">MERN Stack Project</h2>
+        <h5 style="color: white; text-align: center; font-family: Arial">You can view them on github using the below links</h5>
+        <p style="color: white; text-align: center; font-family: Arial">E-portal for case management - https://github.com/Hariabc/my.git</p>
+    </div>
+        <div>
+        <hr class = "horizontal-line2">
+    </div>
+</main>
+<footer>
+    <h2 class = "work-h2" id = "Contact Me">Contact Me</h2>
+    <div class = "footer-div">
+        <div>
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #e6e9ef;" onclick = "instagram()"></i>
+            <h3 class = "work-h3">Instagram</h3>
+        </div>
+        <div>
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #e6e9ef;" onclick = "linkedin()"></i>
+            <h3 class = "work-h3">Linked In</h3>
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #e6e9ef;" onclick = "facebook()"></i>
+            <h3 class = "work-h3">Facebook</h3>
+        </div>
+    </div>
+    <div>
+        <h6 class = "work-h4">Copyright &#169; kushalportfolio.com. All rights reserved</h6>
+    </div>
+    <div class = "about-section1">
+        <div class = "about-section" hidden>
+            
+        </div>
+    </div>
+</footer>
+<script>
+    let button1 = document.querySelector('.js-button1');
+    let button2 = document.querySelector('.js-button2');
+    let aboutsection = document.querySelector('.about-section');
+    button2.addEventListener('click', () => {
+        location.assign('https://github.com/Rahulchaudhary792');
+    })
+    function instagram() {
+        location.assign('https://www.instagram.com/kushal_bharadwaj_estari/');
+    }
+    function linkedin() {
+        location.assign('https://www.linkedin.com/in/kushal-bharadwaj-253989293/');
+    }
+    function facebook() {
+        location.assign('https://www.facebook.com/kushalbharadwaj.estari');
+    }
+    function projects() {
+        location.assign('https://github.com/Rahulchaudhary792?tab=repositories')
+    }
+    function about() {
+        aboutsection.style = 'display: flex;';
+        aboutsection.innerHTML = `
+        <div class = 'div-end'>
+          <div class = 'label-div'>
+            <h5 class = 'label-h5'>Name:</h5>
+            <h5 class = 'label-h5'>Education:</h5>
+            <h5 class = 'label-h5'>Institution:</h5>
+            <h5 class = 'label-h5'>Address:<h5>
+            <h5 class = 'label-h5'>Phone number:</h5>
+            <h5 class = 'label-h5'>Country:</h5>
+            </div>
+            <div class = 'details-div'>
+            <h5>Kushal Bharadwaj</h5>
+            <h5>B.Tech Second Year</h5>
+            <h5>Keshav Memorial Institute of Technology</h5>
+            <h5 class = 'details-h5'>Narayanaguda, Hyderabad</h5>
+            <h5>+91 7569299561</h5>
+            <h5>India</h5>   
+          </div> 
+          </div>
+        `
+        let divend = document.querySelector('.div-end');
+        divend.addEventListener('click', () => {
+            aboutsection.style = 'display: none;';
+        })
+    }
+    /*button1.addEventListener('click', () => {
+        alert("Sorry I didn't completed my graduation.")
+    })*/
+    function services() {
+        alert("No services available now");
+    }
+</script>
+    </body>
+    </html>
